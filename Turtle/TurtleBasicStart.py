@@ -9,15 +9,15 @@ import turtle
 """
 
 scene = turtle.Screen()
-minSkillpadde = turtle.Turtle()
+minSkilpadde = turtle.Turtle()
 
 """
     Benytter så minSkillpadde for å tegne.
 """
 
 for i in range(4):
-    minSkillpadde.forward(75)
-    minSkillpadde.right(90)
+    minSkilpadde.forward(75)
+    minSkilpadde.right(90)
 
 """
     Gi scenen beskjed at ved musklikk skal den lukkes og avsluttes
@@ -25,6 +25,6 @@ for i in range(4):
 scene.exitonclick()
 
 """
-    Påkall og vi scenen vår.
+    Påkall og vis scenen vår.
 """
 scene.mainloop()
