@@ -12,7 +12,7 @@ scene = turtle.Screen()
 minSkilpadde = turtle.Turtle()
 
 """
-    Benytter så minSkillpadde for å tegne.
+    Benytter så minSkilpadde for å tegne.
 """
 
 for i in range(4):
