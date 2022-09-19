@@ -12,7 +12,6 @@ import turtle
 """
 
 
-
 """ Opprett vinduet og skilpadden """
 skilpadde = turtle.Turtle()
 vindu = turtle.Screen()
@@ -28,14 +27,14 @@ skilpadde.rt(-90)
 """ Vinkelen mellom grenene """
 vinkel = 30
 
-""" Funksjon for å plotte inn verdier for Y aksen """
+
+# Funksjon for å plotte inn verdier for Y aksen
 def y(lengde, level):
     if level > 0:
         vindu.colormode(255)
 
         """ Endrer RGB range for fargen utfra hvilken level vi er på """
         skilpadde.pencolor(0, 255 // level, 0)
-
         """ Tegner basen """
         print("Nivå: " + str(level) + ".Tegner basen")
         skilpadde.forward(lengde)
