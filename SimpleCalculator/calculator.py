@@ -41,11 +41,14 @@ running = True
 while running:
     """ Så lenge running er SANN(True) skal han utføre det som er kodet under. Når alle kodelinjene under er utført skal han komme
     tilbake til dette punktet, sjekke om running er SANN(True) og kjøre alle kodelinjene på nytt så sant running er SANN(True) """
+
     # Print en linje med hva som er mulig til informasjon
     print("1: Legg sammen, 2: Trekk fra, 3: Multipliser, 4: Divider, 5: Avslutt")
+
     # Spør brukeren om hva som er ønskelig og sett svaret i en variabel "Valg"
     # Her benytter vi int(input("tekst tekst")) siden vi ikke ønsker desimaltall på valget fra brukeren. Heltall holder
     Valg = int(input("Hva ønsker du å gjøre? "))
+
     if Valg == 5:
         Stopp()
     else:

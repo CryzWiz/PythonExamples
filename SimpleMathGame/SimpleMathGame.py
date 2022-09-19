@@ -3,7 +3,7 @@ import queue
 import random
 
 # Enkelt mattespill hvor vi generere 2 tilfeldige tall mellom 0 og 50. Vi spørr så bruker
-# hva disse er sammelagt. Bruker har 5 sekund på å svare. Vi teller 1 poeng for hvert
+# hva disse er sammenlagt. Bruker har 5 sekund på å svare. Vi teller 1 poeng for hvert
 # korrekt svar så lenge det ikke timer ut eller bruker svarer feil.
 
 Svar = 0

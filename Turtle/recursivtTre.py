@@ -19,7 +19,7 @@ vindu = turtle.Screen()
 vindu.title("Recursiv funksjon - Lag et tre")
 vindu.bgcolor("black")
 
-""" Sett hastighet for skilpadden """
+""" Sett hastighet for skilpadden - 0 er maks hastighet """
 skilpadde.speed(0)
 
 """ Vri skilpadden til å peke oppover """
@@ -28,7 +28,7 @@ skilpadde.rt(-90)
 """ Vinkelen mellom grenene """
 vinkel = 30
 
-""" Funksjon for å plotte inn verdier for Y """
+""" Funksjon for å plotte inn verdier for Y aksen """
 def y(lengde, level):
     if level > 0:
         vindu.colormode(255)
@@ -52,7 +52,8 @@ def y(lengde, level):
         print("Nivå: " + str(level) + ".Setter fargen igjen")
         skilpadde.pencolor(0, 255 // level, 0)
 
-        """ Vrir oss igjen for den andre grenen """
+        """ Vrir oss igjen for den andre grenen, da med * 2 på vinkel siden vi må først
+            tilbake fra de 30 graderne vi har vrid oss til høyre, så skal vi 30 grader mot venstre """
         print("Nivå: " + str(level) + ".Vrir oss igjen for den andre grenen")
         skilpadde.left(2 * vinkel)
 
@@ -72,4 +73,6 @@ def y(lengde, level):
 
 """ Setter lengde til 80px og 9 nivåer """
 y(80, 9)
+
+""" Hold vinduet åpent når funksjonen er ferdig """
 vindu.mainloop()
