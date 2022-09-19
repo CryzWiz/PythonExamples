@@ -6,6 +6,8 @@ import turtle
 
 """
     Lag en scene og vår egen turtle som kan utføre tegningen.
+    Scenen er vinduet som åpnes. Med å definere den inn kan du gi
+    den egne verdier for tekst, farge og størrelse osv.
 """
 
 scene = turtle.Screen()
