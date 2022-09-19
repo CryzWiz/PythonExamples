@@ -19,5 +19,7 @@ startlon = radians(float(input("Lengdegrad start: ")))
 endlat = radians(float(input("Breddegrad slutt: ")))
 endlon = radians(float(input("Lengdegrad slutt: ")))
 
+""" Selve kalkuleringen """
 dist = 6371.01 * acos(sin(startlat) * sin(endlat) + cos(startlat) * cos(endlat) * cos(startlon - endlon))
+
 print("Avstanden er %.2f km." % dist)

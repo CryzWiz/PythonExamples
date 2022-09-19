@@ -5,9 +5,11 @@ import turtle
     Eksempel her ved å tegne et tre. 
     Hver gang koden inne i If statementen kommer til påkalling av funksjonen på nytt går den tilbake til start
     og jobber fra det nye nivået. Når den er kommet til nivå 0, altså toppen, stopper den
-    og går tilbake til opprinneling kall.
+    og går tilbake til kallet gjort før kallet som ble ferdig.
     Så du skal her se at den tar første gren helt opp, så ramler ned et nivå, jobber seg opp til begge bladene er tegnet,
     så ramle ned på et nytt nivå og gjentar prosessen.
+    
+    Altså jobber seg til toppen -> Ramler så ned til foregående vinkel -> Tegner derifra. Rinse and repeat.
     
 """
 
@@ -70,7 +72,7 @@ def y(lengde, level):
         skilpadde.forward(-lengde)
 
 
-""" Setter lengde til 80px og 9 nivåer """
+""" Setter lengde til 80px og 9 nivåer og kaller funksjonen """
 y(80, 9)
 
 """ Hold vinduet åpent når funksjonen er ferdig """
