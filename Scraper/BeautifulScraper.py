@@ -21,7 +21,10 @@ def finn_avisartikler_vg(overskrift, nettsted_url):
     return artikler
 
 
-overskrift = ''
-nettsted_url = ''
+overskrift = 'haaland'
+nettsted_url = 'https://vg.no'
 
 funnede_artikler = finn_avisartikler_vg(overskrift, nettsted_url)
+
+for artikkel in funnede_artikler:
+    print(artikkel['tittel'])
